@@ -75,7 +75,9 @@ export default function Header() {
           </HStack>
         </HStack>
         <Button onClick={toggleColorMode}>{colorMode === "light" ? <BsFillSunFill /> : <BsFillMoonStarsFill />}</Button>
+        <Text>asdlkf</Text>
       </HStack>
     </Stack>
   );
 }
+J;
