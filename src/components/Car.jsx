@@ -1,4 +1,4 @@
-import { Box, HStack, Text } from "@chakra-ui/react";
+import { Box, HStack } from "@chakra-ui/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -23,13 +23,13 @@ export default function Car() {
         <HStack
           w="full"
           h="1000px"
-          backgroundImage={'url("https://media.contentapi.ea.com/content/dam/news/www-ea/common/ea-motive-new-title-teaser-16x9.jpg.adapt.1456w.jpg")'}
+          backgroundImage={'url("https://cdn.britannica.com/60/182360-050-CD8878D6/Avengers-Age-of-Ultron-Joss-Whedon.jpg")'}
           backgroundSize="cover"
         ></HStack>
         <HStack
           w="full"
           h="1000px"
-          backgroundImage={'url("https://media.contentapi.ea.com/content/dam/news/www-ea/common/ea-motive-new-title-teaser-16x9.jpg.adapt.1456w.jpg")'}
+          backgroundImage={'url("https://cdn.britannica.com/60/182360-050-CD8878D6/Avengers-Age-of-Ultron-Joss-Whedon.jpg")'}
           backgroundSize="cover"
         ></HStack>
       </Slider>

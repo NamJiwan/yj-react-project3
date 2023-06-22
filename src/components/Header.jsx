@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
   const [scroll, setScroll] = useState(true);
-  const location = useLocation();
+  const Location = useLocation();
   const [winScroll, setWinScroll] = useState(true);
 
   useEffect(() => {
@@ -43,13 +43,12 @@ export default function Header() {
       href: "/events",
     },
   ];
-  console.log(GNB.map((item) => item.href));
-  console.log(location.pathname);
+  console.log(Location.pathname);
   return (
     <Stack
       w="full"
       h="60px"
-      color={GNB.map((item) => (location.pathname === item.href ? "red" : "white"))}
+      color="white"
       fontWeight={600}
       fontSize={"20px"}
       alignItems={"center"}
@@ -69,15 +68,13 @@ export default function Header() {
           <HStack spacing="4" textTransform={"uppercase"}>
             {GNB.map((item) => (
               <Link to={item.href} key={item.title} aria-label={item.title}>
-                <Text>{item.title}</Text>
+                <Text color={item.href === Location.pathname ? "red.600" : "white"}>{item.title}</Text>
               </Link>
             ))}
           </HStack>
         </HStack>
         <Button onClick={toggleColorMode}>{colorMode === "light" ? <BsFillSunFill /> : <BsFillMoonStarsFill />}</Button>
-        <Text>asdlkf</Text>
       </HStack>
     </Stack>
   );
 }
-J;
